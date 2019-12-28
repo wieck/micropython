@@ -30,7 +30,9 @@
 #include "py/mphal.h"
 
 mp_uint_t machine_time_pulse_us(mp_hal_pin_obj_t pin, int pulse_level, mp_uint_t timeout_us);
+mp_uint_t machine_time_pulse2_us(mp_hal_pin_obj_t pin1, int pulse_level1, mp_hal_pin_obj_t pin2, int pulse_level2, mp_uint_t timeout_us);
 
 MP_DECLARE_CONST_FUN_OBJ_VAR_BETWEEN(machine_time_pulse_us_obj);
+MP_DECLARE_CONST_FUN_OBJ_VAR_BETWEEN(machine_time_pulse2_us_obj);
 
 #endif // MICROPY_INCLUDED_EXTMOD_MACHINE_PULSE_H
